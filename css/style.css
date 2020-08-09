@@ -248,7 +248,7 @@ body.scrolled header a {
 	right: 0px;
 	z-index: -1;
 	background-position: center center;
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 .hero .table-cell {

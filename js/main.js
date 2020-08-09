@@ -161,65 +161,6 @@ function reset(x) {
 	});
 }
 
-// var total = 50;
-// var w = $("#container").width();
-// var h = $("#container").height();
-
-// function throwConfetti2() {
-// 	w = $("#container").width();
-// 	h = $("#container").height();
-
-// 	for (i=0; i<total; i++){
-// 		$("#container").append('<div class="dot"></div>');
-// 		gsap.set($(".dot")[i], {
-// 			x: Random(w),
-// 			y: random(-100,100),
-// 			opacity: 1,
-// 			scale: Random(0.5)+0.5,
-// 			backgroundColor: "hsl(" + random(170,360) + ",50%,50%)"
-// 		});
-// 		animm($(".dot")[i]);
-// 	}
-// }
-
-// function animm(elm){
-// 	gsap.to(elm, {
-// 		duration: Random(5)+4,
-// 		y: h,
-// 		ease: Linear.easeNone,
-// 		repeat: -1,
-// 		delay: -5
-// 	});
-// 	gsap.to(elm, {
-// 		duration: Random(5)+1,
-// 		x: '+=70',
-// 		repeat: -1,
-// 		yoyo: true,
-// 		ease: Sine.easeInOut
-// 	});
-// 	gsap.to(elm, {
-// 		duration: Random(5)+1,
-// 		scaleX: 0.2,
-// 		rotation: Random(360),
-// 		repeat: -1,
-// 		yoyo: true,
-// 		ease: Sine.easeInOut
-// 	});
-// 	gsap.to(elm, {
-// 		duration: Random(1)+0.5,
-// 		opacity: 0,
-// 		repeat: -1,
-// 		yoyo: true,
-// 		ease: Sine.easeInOut
-// 	});
-// };
-// function Random (max) {
-// 	return Math.random()*max;
-// }
-// function random(min, max) {
-// 	return min + Math.floor( Math.random() * (max - min));
-// }
-
 function animateChat() {
 	var tl = new TimelineMax();
 	tl.set($(".messages > .message"), {
