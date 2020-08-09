@@ -247,7 +247,6 @@ body.scrolled header a {
 	left: 0px;
 	right: 0px;
 	z-index: -1;
-	background: url(../img/hero.jpg);
 	background-position: center center;
 	background-repeat: none;
 	background-size: cover;
@@ -301,7 +300,15 @@ body.scrolled header a {
 		margin-top: -40px;
 	}
 }
+@media (min-width: 640px) {
+	.hero {
+		background-image: url(../img/hero.jpg);
+	}
+}
 @media (max-width: 639px) {
+	.hero {
+		background-image: url(../img/hero-mobile.jpg);
+	}
 	.hero h1 {
 		font-size: 23px;
 	}
