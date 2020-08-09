@@ -254,6 +254,7 @@ body.scrolled header a {
 }
 .hero .table-cell {
 	height: 100vh;
+	height: calc(100vh - var(--vh-offset, 0px));
 }
 .hero .strikeout {
 	position: relative;
