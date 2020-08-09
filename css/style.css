@@ -301,12 +301,12 @@ body.scrolled header a {
 	}
 }
 @media (min-width: 640px) {
-	.hero {
+	.hero-background {
 		background-image: url(../img/hero.jpg);
 	}
 }
 @media (max-width: 639px) {
-	.hero {
+	.hero-background {
 		background-image: url(../img/hero-mobile.jpg);
 	}
 	.hero h1 {
