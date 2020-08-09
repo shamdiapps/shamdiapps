@@ -232,7 +232,7 @@ function animateChat() {
 		opacity: 1
 	})
 	.to($(".messages:nth-child(2) > .message:nth-child(1)"), {
-		delay: 2,
+		delay: 1.5,
 		duration: 0.3,
 		ease: Power3.out,
 		marginTop: 0,
@@ -246,7 +246,7 @@ function animateChat() {
 		opacity: 1
 	})
 	.to($(".messages:nth-child(2) > .message:nth-child(3)"), {
-		delay: 3,
+		delay: 2,
 		duration: 0.3,
 		ease: Power3.out,
 		marginTop: 0,
@@ -260,7 +260,7 @@ function animateChat() {
 		opacity: 1
 	})
 	.to($(".messages:nth-child(3) > .message"), {
-		delay: 4,
+		delay: 3,
 		duration: 0.3,
 		ease: Power3.out,
 		marginTop: 0,
