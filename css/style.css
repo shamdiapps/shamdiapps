@@ -487,15 +487,22 @@ body.scrolled header a {
 	}
 }
 @media (max-width: 639px) {
-	.contact .chat {
+	/*.contact .chat {
 		display: none;
-	}
+	}*/
 	.contact h3 {
 		margin-bottom: 30px;
 	}
 	.contact p {
 		margin-bottom: 15px;
 	}
+}
+
+
+
+footer a {
+	opacity: 0;
+	display: none;
 }
 
 
@@ -615,6 +622,49 @@ body.scrolled header a {
 	height: 20px;
 	background: white;
 	border-bottom-left-radius: 10px;
+}
+@media (max-width: 412px) {
+	.contact .chat {
+		height: 754px;
+		background-size: contain;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.contact .message {
+		font-size: 13px;
+	}
+	.yours .message {
+		margin-right: 20%;
+	}
+	.mine .message {
+		margin-left: 20%;
+	}
+}
+@media (max-width: 400px) {
+	.contact .chat {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+}
+@media (max-width: 350px) {
+	.contact .chat {
+		padding-top: 170px;
+	}
+	.contact .message {
+		font-size: 12px;
+	}
+	.message {
+		line-height: 17px;
+	}
+	.messages {
+		margin-top: 15px;
+	}
+	.yours .message {
+		margin-right: 15%;
+	}
+	.mine .message {
+		margin-left: 15%;
+	}
 }
 
 
