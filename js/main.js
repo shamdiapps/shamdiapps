@@ -18,7 +18,7 @@ $(function () {
 			});
 			gsap.fromTo($("header a"), {
 				marginLeft: "20px",
-				opacity: "0"
+				opacity: "0.3"
 			}, {
 				duration: 0.5,
 				ease: "power2.inOut",
