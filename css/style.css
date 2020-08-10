@@ -222,6 +222,7 @@ body.scrolled header a {
 	}
 	header a.active {
 		border-bottom-color: #222222;
+		padding-bottom: 2px;
 	}
 	#hamburger {
 		display: block;

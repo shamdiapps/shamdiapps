@@ -23,7 +23,10 @@ $(function () {
 				duration: 0.5,
 				ease: "power2.inOut",
 				marginLeft: "0px",
-				opacity: "1"
+				opacity: "1",
+				onComplete: function() {
+					gsap.set($("header a"), {clearProps: "all"});
+				}
 			});
 		}, false);
 	}
