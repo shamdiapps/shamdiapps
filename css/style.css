@@ -130,7 +130,7 @@ header {
 	padding: 20px 10px 60px;
 	left: 0px;
 	right: 0px;
-	z-index: 1;
+	z-index: 2;
 	background: rgb(255,255,255);
 	background: -moz-linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%);
@@ -203,20 +203,25 @@ body.scrolled header a {
 	header nav {
 		display: none;
 		float: none;
+		padding-top: 20px;
+		padding-left: 20px;
 	}
 	header nav.is-open {
 		display: block;
-		top: 0px;
-		bottom: 0px;
 	}
 	header a,
 	body.scrolled header a {
+		color: #222222;
 		display: block;
 		height: 28px;
 		line-height: 38px;
 		margin-left: 0px;
 		margin-top: 15px;
 		width: fit-content;
+		transition: none;
+	}
+	header a.active {
+		border-bottom-color: #222222;
 	}
 	#hamburger {
 		display: block;
@@ -225,6 +230,7 @@ body.scrolled header a {
 		padding: 5px 0px;
 	}
 	body.mobile-menu-is-open .mobile-background {
+		background: rgb(154,233,180);
 		top: 60px;
 		bottom: 0px;
 		left: 0px;
@@ -487,10 +493,8 @@ body.scrolled header a {
 	}
 }
 @media (max-width: 639px) {
-	/*.contact .chat {
-		display: none;
-	}*/
 	.contact h3 {
+		margin-top: 40px;
 		margin-bottom: 30px;
 	}
 	.contact p {

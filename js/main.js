@@ -8,6 +8,23 @@ $(function () {
 			this.classList.toggle("is-active");
 			$("header nav").toggleClass("is-open");
 			$("body").toggleClass("mobile-menu-is-open");
+			gsap.fromTo($(".mobile-background"), {
+				height: "0px"
+			}, {
+				duration: 0.3,
+				ease: "power2.inOut",
+				height: "100%",
+				bottom: "0px",
+			});
+			gsap.fromTo($("header a"), {
+				marginLeft: "20px",
+				opacity: "0"
+			}, {
+				duration: 0.5,
+				ease: "power2.inOut",
+				marginLeft: "0px",
+				opacity: "1"
+			});
 		}, false);
 	}
 
