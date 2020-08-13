@@ -260,7 +260,8 @@ body.scrolled header a {
 }
 .hero .table-cell {
 	height: 100vh;
-	height: calc(100vh - var(--vh-offset, 0px));
+	/*height: calc(100vh - var(--vh-offset, 0px));*/
+	height: calc(var(--vh, 1vh) * 100);
 }
 .hero .strikeout {
 	position: relative;
@@ -678,7 +679,8 @@ footer a {
 .wrapper-confetti {
 	position: relative;
 	min-height: 100vh;
-	min-height: calc(100vh - var(--vh-offset, 0px));
+	/*min-height: calc(100vh - var(--vh-offset, 0px));*/
+	min-height: calc(var(--vh, 1vh) * 100);
 	overflow: hidden;
 }
 [class|="confetti"] {
