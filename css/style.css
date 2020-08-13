@@ -512,7 +512,7 @@ footer a {
 
 
 /* Grid */
-.grid {
+/*.grid {
 	height: 100vh;
 }
 .grid .table-cell {
@@ -522,7 +522,7 @@ footer a {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-}
+}*/
 
 
 
@@ -678,6 +678,7 @@ footer a {
 .wrapper-confetti {
 	position: relative;
 	min-height: 100vh;
+	min-height: calc(100vh - var(--vh-offset, 0px));
 	overflow: hidden;
 }
 [class|="confetti"] {
