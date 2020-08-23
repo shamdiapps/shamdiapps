@@ -58,6 +58,7 @@
 	gtag('js', new Date());
 
 	gtag('config', 'UA-33006833-6');
+	gtag('config', 'AW-601938063');
 	</script>
 </head>
 <body>
@@ -245,6 +246,8 @@ myform.submit(function(event) {
 	myform.find("button").text("Sending...");
 	emailjs.sendForm(service_id, template_id, myform[0])
 		.then(function() {
+			// Event snippet for Website lead conversion page
+			gtag('event', 'conversion', {'send_to': 'AW-601938063/MneXCK6xtNwBEI-xg58C'});
 			alert("Sent!");
 			myform.find("button").text("Send");
 			myform.find("button").attr("disabled", "disabled");
