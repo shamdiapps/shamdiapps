@@ -63,14 +63,19 @@ img {
 }
 blockquote {
 	background: #f9f9f9;
-	border-left: 10px solid #ccc;
+	border-left: 10px solid rgba(67,233,125,0.7);
 	border-radius: 4px;
-	margin: 1.5em 0px;
+	margin: 3em 0px;
 	padding: 1em 1em;
-	quotes: "\201C""\201D""\2018""\2019";
+	/*quotes: "\201C""\201D""\2018""\2019";*/
+	quotes: "\201C""\201D";
+}
+blockquote:last-child {
+	margin-bottom: 0px;
 }
 blockquote:before {
-	color: #ccc;
+	/*color: #ccc;*/
+	color: rgba(67,233,125,0.7);
 	content: open-quote;
 	font-size: 4em;
 	line-height: 0.1em;
@@ -82,6 +87,8 @@ blockquote p {
 	font-style: italic;
 }
 blockquote hr {
+	border-style: solid;
+	border-color: rgba(67,233,125,0.7);
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -92,9 +99,6 @@ blockquote footer {
 @media (max-width: 1023px) {
 	h1 {
 		font-size: 36px;
-	}
-	h2 {
-
 	}
 }
 @media (max-width: 639px) {
@@ -318,15 +322,7 @@ body.scrolled header a {
 		margin-top: -40px;
 	}
 }
-@media (min-width: 640px) {
-	.hero-background {
-		/*background-image: url(../img/hero.jpg);*/
-	}
-}
 @media (max-width: 639px) {
-	.hero-background {
-		/*background-image: url(../img/hero-mobile.jpg);*/
-	}
 	.hero h1 {
 		font-size: 23px;
 	}
@@ -429,9 +425,8 @@ body.scrolled header a {
 
 
 .about {
-	/*background-image: url(../img/google-maps.png);*/
 	background-position: center center;
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 120px 15px;
 }
@@ -457,8 +452,8 @@ body.scrolled header a {
 	.about .card {
 		padding: 30px 20px;
 	}
-	.about img {
-		margin-top: 40px;
+	.about span {
+		margin-bottom: 20px;
 	}
 }
 
