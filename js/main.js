@@ -8,14 +8,14 @@ $(function () {
 			this.classList.toggle("is-active");
 			$("header nav").toggleClass("is-open");
 			$("body").toggleClass("mobile-menu-is-open");
-			gsap.fromTo($(".mobile-background"), {
-				height: "0px"
-			}, {
-				duration: 0.3,
-				ease: "power2.inOut",
-				height: "100%",
-				bottom: "0px",
-			});
+			// gsap.fromTo($(".mobile-background"), {
+			// 	height: "0px"
+			// }, {
+			// 	duration: 0.3,
+			// 	ease: "power2.inOut",
+			// 	height: "100%",
+			// 	bottom: "0px",
+			// });
 			gsap.fromTo($("header a"), {
 				marginLeft: "20px",
 				opacity: "0.3"
@@ -90,6 +90,9 @@ function checkScrolled() {
 	if ($(this).scrollTop() + headerHeight >= ($("#contact").offset().top)) {
 		$("header nav a").removeClass("active");
 		$("#link-contact").addClass("active");
+	} else if ($(this).scrollTop() + headerHeight >= ($("#about").offset().top)) {
+		$("header nav a").removeClass("active");
+		$("#link-about").addClass("active");
 	} else if ($(this).scrollTop() + headerHeight >= ($("#testimonials").offset().top)) {
 		$("header nav a").removeClass("active");
 		$("#link-testimonials").addClass("active");

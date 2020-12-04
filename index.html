@@ -49,6 +49,15 @@
 	</script>
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- LazySizes -->
+	<script src="js/ls.bgset.min.js"></script>
+	<script src="js/lazysizes.min.js" async=""></script>
+	<script>
+	window.lazySizesConfig = window.lazySizesConfig || {};
+	window.lazySizesConfig.customMedia = {
+		'--small': '(max-width: 639px)'
+	};
+	</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33006833-6"></script>
@@ -76,14 +85,15 @@
 					<a id="link-home" href="#home" class="active">Home</a>
 					<a id="link-intro" href="#intro">Services</a>
 					<a id="link-testimonials" href="#testimonials">Testimonials</a>
+					<a id="link-about" href="#about">About</a>
 					<a id="link-contact" href="#contact">Contact</a>
 				</nav>
 			</div>
 		</div>
 	</header>
 	<main>
-		<div id="home" class="hero">
-			<div class="hero-background"></div>
+		<section id="home" class="hero">
+			<div class="hero-background lazyload" data-bgset="img/hero-mobile.jpg [--small] | img/hero.jpg" data-sizes="auto"></div>
 			<div class="row">
 				<div class="medium-12 columns text-center">
 					<div class="table">
@@ -100,17 +110,17 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div class="wrapper-confetti">
-			<div id="intro" class="intro">
+			<section id="intro" class="intro">
 				<div class="row">
 					<div class="columns text-center">
 						<h2>You&rsquo;ve come to the right place!</h2>
 						<p>We&rsquo;ll get your website spruced up and kicking hard, <br class="small-hide">so you can get back to doing what you love.</p>
 					</div>
 				</div>
-			</div>
-			<div class="row xlarge services">
+			</section>
+			<section class="row xlarge services">
 				<div class="table">
 					<div class="table-row">
 						<div class="table-cell large-6">
@@ -147,14 +157,14 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		</div>
-		<div class="thrive text-center">
+		<section class="thrive text-center">
 			<h2>You deserve to thrive</h2>
 			<p>If your site isn't drawing enough visitors to action, you're missing out on some big opportunities.</p>
 			<p>Let your business thrive online with a blend of modern design, lean code, and killer content.</p>
-		</div>
-		<div id="testimonials" class="testimonials row">
+		</section>
+		<section id="testimonials" class="testimonials row">
 			<div class="medium-8 medium-offset-2 columns">
 				<h2>Our experience with Shamdi Apps</h2>
 				<blockquote>
@@ -163,7 +173,26 @@
 					<footer>Eddie M, General Managing Partner, No Limit Race Development and Manufacturing</footer>
 				</blockquote>
 			</div>
-		</div>
+		</section>
+		<section id="about" class="about lazyload" data-bgset="img/google-maps.png">
+			<div class="card row">
+				<div class="row">
+					<div class="columns">
+						<h2>About the owner</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="medium-8 columns">
+						<p>Jeremy is 26 years old and lives with his wife in Longmont, Colorado. He has been writing code and running multiple businesses for 11 years. Jeremy is a positive thinker, strong communicator, and a problem solver. He has a passion for healthy living and streamlining businesses online.</p>
+						<p>When he isn't working, you can find him making a green shake, lifting weights, meditating, listening to deep house, or PC gaming.</p>
+					</div>
+					<div class="medium-4 columns text-center">
+						<img data-srcset="img/jeremy-langer-shamdi-apps-owner.jpg 1x, img/jeremy-langer-shamdi-apps-owner@2x.jpg 2x, img/jeremy-langer-shamdi-apps-owner@3x.jpg 3x" alt="Jeremy Langer, Owner of Shamdi Apps" class="lazyload">
+						<span>Jeremy Langer</span>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		
 				
@@ -260,7 +289,6 @@ myform.submit(function(event) {
 </script>
 
 	<script src="js/main.js"></script>
-	<script src="js/lazysizes.min.js" async=""></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 </body>
 </html>
