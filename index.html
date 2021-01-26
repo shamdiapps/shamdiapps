@@ -299,7 +299,8 @@ myform.submit(function(event) {
 	// Validation
 	if ($("#from_name").val() == "" ||
 		$("#user_email").val() == "" ||
-		$("#message").val() == "") {
+		$("#message").val() == "" ||
+		$("#message").val().length < 15) {
 		return;
 	}
 
