@@ -170,7 +170,7 @@ function drop(x) {
 	$('.confetti-'+x).animate({
 		top: "100%",
 		left: "+="+Math.random()*15+"%"
-	}, Math.random()*3000 + 3000, function() {
+	}, Math.random()*2000 + 5000, function() {
 		// reset(x);
 		$('.confetti-'+x).remove();
 	});
